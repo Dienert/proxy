@@ -20,7 +20,7 @@ Baixe o arquivo zip do Digestaps e salve no diretório de sua preferência. E.g.
 
 ```bash
 mkdir ~/apps
-wget --no-check-certificate -O ~/apps/digestaps.zip -c https://www-git.prevnet/joao.tosta/digestaps/repository/archive.zip?ref=master
+wget --no-check-certificate -O ~/apps/ntlmaps-Linux.tar.gz -c https://github.com/Dienert/proxy/blob/master/ntlmaps-Linux.tar.gz
 ```
 
 ### Instalação - Linux
@@ -28,7 +28,7 @@ wget --no-check-certificate -O ~/apps/digestaps.zip -c https://www-git.prevnet/j
 Descompacte o arquivo digestaps.zip no diretório desejado. E.g.: `~/apps/`
 
 ```bash
-cd ~/apps && unzip digestaps.zip && mv digestaps.git ntlmaps-Linux && rm -rf digestaps.zip
+cd ~/apps && tar -zxfv ntlmaps-Linux.tar.gz && rm -rf ntlmaps-Linux.tar.gz
 ```
 
 ### Configuração
@@ -39,6 +39,7 @@ Instale o pacote python-crypto para fornecer suporte a criptografia no python:
 
 - [Pacote para Linux em plataforma amd64](python-crypto_2.6.1-5+b2_amd64.deb)
 - [Pacote para Linux em plataforma i386](python-crypto_2.6.1-5+b2_i386.deb)
+- [Pacote para Linux Red Hat em plataforma x86_64](python-crypto-2.6.1-1.el6.rfx.x86_64.rpm)
 
 
 Acesse o diretório do ntlmaps e execute o utilitário `encrypt` para criptograr a senha de acesso ao proxy:
@@ -78,7 +79,7 @@ LISTEN_PORT:3128
 PARENT_PROXY:psquidrj01.prevnet
 PARENT_PROXY_PORT:8080
 PARENT_PROXY_TIMEOUT:5
-HOSTS_TO_BYPASS_PARENT_PROXY:localhost 127.0.0.1 localaddress *.localdomain.com 10.* www-sisgf www-git www-nexus www-dtpnet www-* www-rhutil-tst www-sisgf www-nexus www-git www-arquitetura *.nuvemdtp *.prevnet www-sgpe www-nuvem www-webdatafone www-svc www-processos www-dtpagenda www-apps www-sdm www-dataoverflow www-testes www-datafone www-dtpprojetos www-git.prevnet cvsrj1 www-hudson www-achaprev nuvem.dataprev.gov.br sso-nuvem.dataprev.gov.br *.dataprev.gov.br www-video www-arquiteturacorporativa www-framework nuvemdtp
+HOSTS_TO_BYPASS_PARENT_PROXY:localhost 127.0.0.1 localaddress *.localdomain.com 10.* 
 URL_LOG:1
 MAX_CONNECTION_BACKLOG:1024
 
@@ -151,7 +152,7 @@ export http_proxy=http://localhost:3128
 export https_proxy=$http_proxy
 export ftp_proxy=$http_proxy
 export rsync_proxy=$http_proxy
-export no_proxy=localhost,127.0.0.1,localaddress,*.localdomain.com,10.*,www-sisgf,www-git,www-nexus,www-dtpnet,www-*,www-rhutil-tst,www-sisgf,www-nexus,www-git,www-arquitetura,*.nuvemdtp,*.prevnet,www-sgpe,www-nuvem,www-webdatafone,www-svc,www-processos,www-dtpagenda,www-apps,www-sdm,www-dataoverflow,www-testes,www-datafone,www-dtpprojetos,www-git.prevnet,cvsrj1,www-hudson,www-achaprev,nuvem.dataprev.gov.br,sso-nuvem.dataprev.gov.br,*.dataprev.gov.br,www-video,www-arquiteturacorporativa,www-framework,nuvemdtp
+export no_proxy=localhost,127.0.0.1,localaddress,*.localdomain.com,10.*
 
 # Configurações para proxy automático em ambientes Gnome
 gsettings set org.gnome.system.proxy autoconfig-url 'http://localhost:8000/digestaps.pac'
@@ -280,7 +281,7 @@ LISTEN_PORT:3128
 PARENT_PROXY:psquidrj01.prevnet
 PARENT_PROXY_PORT:8080
 PARENT_PROXY_TIMEOUT:5
-HOSTS_TO_BYPASS_PARENT_PROXY:localhost 127.0.0.1 localaddress *.localdomain.com 10.* www-sisgf www-git www-nexus www-dtpnet www-* www-rhutil-tst www-sisgf www-nexus www-git www-arquitetura *.nuvemdtp *.prevnet www-sgpe www-nuvem www-webdatafone www-svc www-processos www-dtpagenda www-apps www-sdm www-dataoverflow www-testes www-datafone www-dtpprojetos www-git.prevnet cvsrj1 www-hudson www-achaprev nuvem.dataprev.gov.br sso-nuvem.dataprev.gov.br *.dataprev.gov.br www-video www-arquiteturacorporativa www-framework nuvemdtp
+HOSTS_TO_BYPASS_PARENT_PROXY:localhost 127.0.0.1 localaddress *.localdomain.com 10.* 
 URL_LOG:1
 MAX_CONNECTION_BACKLOG:1024
 
