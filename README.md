@@ -239,7 +239,7 @@ Baixe o pacote com o código fonte do Digestaps e salve no diretório de sua pre
 __Versão Simples__
 
 ```
-https://github.com/JohannesBuchner/digestaps/archive/master.zip
+https://github.com/Dienert/proxy/blob/master/ntlmaps-Windows.rar
 ```
 
 __Versão com Criptografia__
@@ -308,7 +308,7 @@ __Após alteração__
 
 ```bat
 @echo off
-"c:\python\python.exe" scripts/ntlmaps
+"c:\python27\python.exe" scripts/ntlmaps
 ```
 
 Ao finalizar, inicie o Digestaps utilizando o arquivo bat.
