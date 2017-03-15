@@ -250,7 +250,7 @@ https://github.com/jctosta/digestaps/archive/master.zip
 
 ### Instalação
 
-Descompacte o arquivo `master.zip`. Altere o nome do diretório criado para `ntlmaps-Windows`.
+Descompacte o arquivo `ntlmaps-Windows.rar`.
 
 ### Configuração
 
