@@ -330,6 +330,8 @@ Para contornar os problemas de autenticação no GitLab, crie um servidor web lo
 
 Nas ferramentas que possuam configurações de proxy próprias, utilize o endereço `http://localhost:3128`.
 
+Configurar as variáveis de ambiente http_proxy e https_proxy com o valor `http://localhost:3128`
+
 ### Inicialização Automática
 
 //@TODO: Documentar o processo para incialização automática no Windows
