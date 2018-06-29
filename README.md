@@ -454,7 +454,7 @@ export http_proxy=http://localhost:3128
 export https_proxy=$http_proxy
 export ftp_proxy=$http_proxy
 export rsync_proxy=$http_proxy
-export no_proxy=localhost,127.0.0.1,localaddress,*.localdomain.com,10.*,www-sisgf,www-git,www-nexus,www-dtpnet,www-*,www-rhutil-tst,www-sisgf,www-nexus,www-git,www-arquitetura,*.nuvemdtp,*.prevnet,www-sgpe,www-nuvem,www-webdatafone,www-svc,www-processos,www-dtpagenda,www-apps,www-sdm,www-dataoverflow,www-testes,www-datafone,www-dtpprojetos,www-git.prevnet,cvsrj1,www-hudson,www-achaprev,nuvem.dataprev.gov.br,sso-nuvem.dataprev.gov.br,*.dataprev.gov.br,www-video,www-arquiteturacorporativa,www-framework,nuvemdtp
+export no_proxy=localhost,127.0.0.1,localaddress,*.localdomain.com,
 
 # NodeJS
 npm config set proxy $http_proxy
