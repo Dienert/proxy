@@ -76,7 +76,7 @@ Edite o arquivo `server.cfg` com as seguintes informações:
 
 ```
 LISTEN_PORT:3128
-PARENT_PROXY:psquidrj01.prevnet
+PARENT_PROXY:IP_OU_NOME_DO_PROXY
 PARENT_PROXY_PORT:8080
 PARENT_PROXY_TIMEOUT:5
 HOSTS_TO_BYPASS_PARENT_PROXY:localhost 127.0.0.1 localaddress *.localdomain.com 10.* 
@@ -278,7 +278,7 @@ Abra o arquivo `C:\\ntlmaps-Windows\\server.cfg` no editor de sua preferência e
 
 ```
 LISTEN_PORT:3128
-PARENT_PROXY:psquidrj01.prevnet
+PARENT_PROXY:IP_OU_NOME_DO_PROXY
 PARENT_PROXY_PORT:8080
 PARENT_PROXY_TIMEOUT:5
 HOSTS_TO_BYPASS_PARENT_PROXY:localhost 127.0.0.1 localaddress *.localdomain.com 10.* 
@@ -394,7 +394,7 @@ Edite o arquivo `server.cfg` com as seguintes informações:
 
 ```
 LISTEN_PORT:3128
-PARENT_PROXY:psquidrj01.prevnet
+PARENT_PROXY:IP_OU_NOME_DO_PROXY
 PARENT_PROXY_PORT:8080
 PARENT_PROXY_TIMEOUT:5
 URL_LOG:1
