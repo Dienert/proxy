@@ -1,6 +1,6 @@
 # Digestaps
 
-O Digestaps é um servidor de proxy local utilizado para automatizar a autênticação em nosso proxy corporativo (Squid).
+O Digestaps é um servidor de proxy local utilizado para automatizar a autenticação em um proxy Squid.
 
 ## Conteúdo
 
@@ -10,7 +10,7 @@ O Digestaps é um servidor de proxy local utilizado para automatizar a autêntic
 
 ## Motivações
 
-Esta solução foi construída como um paliativo para os problemas que passaram a ocorrer após a mudança de nosso proxy corporativo (Squid) para o método de autênticação Digest.
+Esta solução foi construída como um paliativo para os problemas que passaram a ocorrer após a mudança de um proxy Squid para o método de autenticação Digest.
 
 ## Instruções de Uso - Linux
 
@@ -112,7 +112,7 @@ O procedimento abaixo configura um servidor web estático para disponibilizaçã
 Baixe o arquivo PAC no diretório do Digestaps e inicie um servidor web estático:
 
 ```bash
-mkdir ~/apps/ntlmaps-Linux/pac && wget -c --no-check-certificate -P ~/apps/ntlmaps-Linux/pac/ http://www-git/joao.tosta/digestaps-dist/raw/master/digestaps.pac
+mkdir ~/apps/ntlmaps-Linux/pac && wget -c --no-check-certificate -P ~/apps/ntlmaps-Linux/pac/ digestaps.pac
 ```
 
 Crie o arquivo de inicialização do proxy
