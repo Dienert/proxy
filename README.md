@@ -317,7 +317,7 @@ Ao finalizar, inicie o Digestaps utilizando o arquivo bat.
 
 Acesse as configurações de proxy do sistema e adicione a localização do arquivo PAC:
 
-- `http://www-git/joao.tosta/digestaps-dist/raw/master/digestaps.pac`
+- `digestaps.pac`
 
 Para contornar os problemas de autenticação no GitLab, crie um servidor web local:
  - Coloque o arquivo digestaps.pac numa pasta
@@ -434,7 +434,7 @@ Baixe o arquivo PAC no diretório do Digestaps e inicie um servidor web estátic
 # Crie o diretório local para o arquivo .PAC
 mkdir ~/apps/ntlmaps-Mac/pac
 # Baixe o arquivo no diretório criado no passo anterior
-wget -c --no-check-certificate -P ~/apps/ntlmaps-Mac/pac/ http://www-git/joao.tosta/digestaps-dist/raw/master/digestaps.pac
+wget -c --no-check-certificate -P ~/apps/ntlmaps-Mac/pac/ digestaps.pac
 # Inicie o servidor web no diretório
 echo -e '#!/bin/bash\n\ncd ~/apps/ntlmaps-Mac/pac && python -m SimpleHTTPServer' >> ~/start-pac-server.sh && chmod +x ~/start-pac-server.sh
 cd ~/apps/ntlmaps-Mac/pac && python -m SimpleHTTPServer
